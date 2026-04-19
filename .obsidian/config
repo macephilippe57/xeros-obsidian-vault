@@ -1,19 +1,75 @@
-{
-  "app": "obsidian",
-  "version": "1.6.21",
-  "showTribits": false,
-  "safeSave": true,
-  "baseAttachmentsPath": "/root/obsidian-vault/attachments",
-  "themes": [
-    "obsidian.css"
-  ],
-  "userCss": "user.css",
-  "fileManager": {
-    "defaultVaultLocation": "/root/obsidian-vault",
-    "attachmentsFolderPath": "attachments"
-  },
-  "sync": {
-    "interval": 300,
-    "enabled": true
-  }
-}
+# Obsidian Vault Configuration
+
+## Environment
+- **Vault Path**: `/root/obsidian-vault`
+- **Git Repository**: `git@github.com:XEROS/xeros-obsidian-vault.git` (pending)
+- **Sync Method**: Git push/pull via GitHub
+- **Auto-sync Interval**: Every 5 minutes via cron
+
+## Sync Script
+```bash
+/root/obsidian-sync.sh
+```
+- **Schedule**: `*/5 * * * *` (every 5 minutes)
+- **Log File**: `/root/logs/obsidian-sync.log`
+- **Actions**:
+  - Pull from GitHub
+  - Commit local changes
+  - Push to GitHub
+
+## Git Repository
+- **Remote URL**: `git@github.com:XEROS/xeros-obsidian-vault.git`
+- **Branch**: `master`
+- **First Push**: Pending (requires GitHub repo creation)
+
+## Structure
+```
+/root/obsidian-vault/
+├── .obsidian/               # Obsidian config
+├── TRADING_OPERATIONS/      # Trading data
+├── GBRAIN_SKILLS/           # Bot skills
+├── ADAPTER_INTEGRATIONS/    # Integrations
+├── PAPERCLIP_ADAPTER/       # Hermes adapter
+├── CLAW_CODE_ANALYSIS/      # Agent analysis
+├── setup-obsidian-git.sh    # Setup script
+├── README.md                # Main documentation
+├── GIT_SYNC_SETUP.md        # Git config docs
+├── PC_SETUP.md              # PC guide
+└── .env                     # Environment vars
+```
+
+## Setup Status
+- [x] Git repository initialized
+- [x] Auto-sync cron configured
+- [x] Scripts created and tested
+- [ ] GitHub repository created
+- [ ] Remote URL configured
+- [ ] First push completed
+- [ ] PC clone configured
+- [ ] SSH keys configured
+
+## Commands
+```bash
+# View sync logs
+tail -f /root/logs/obsidian-sync.log
+
+# Check vault status
+cd /root/obsidian-vault && git status
+
+# Force sync
+/root/obsidian-sync.sh
+
+# Manual push
+cd /root/obsidian-vault && git push
+
+# Setup script
+/root/obsidian-vault/setup-obsidian-git.sh
+```
+
+## Integration
+- **Trading Bot**: `/root/trading-bot`
+- **n8n**: `localhost:32768`
+- **Telegram**: @xeroscorpbot
+
+## Last Updated
+2026-04-19 14:45 UTC
