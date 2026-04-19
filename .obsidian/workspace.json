@@ -1,0 +1,11 @@
+{
+  "app": "obsidian",
+  "version": "1.6.21",
+  "show_tribits": false,
+  "safeSave": true,
+  "baseAttachmentsPath": "/root/obsidian-vault/attachments",
+  "themes": [
+    "theme-dark.css",
+    "obsidian.css"
+  ]
+}

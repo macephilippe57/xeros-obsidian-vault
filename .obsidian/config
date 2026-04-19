@@ -1,0 +1,19 @@
+{
+  "app": "obsidian",
+  "version": "1.6.21",
+  "showTribits": false,
+  "safeSave": true,
+  "baseAttachmentsPath": "/root/obsidian-vault/attachments",
+  "themes": [
+    "obsidian.css"
+  ],
+  "userCss": "user.css",
+  "fileManager": {
+    "defaultVaultLocation": "/root/obsidian-vault",
+    "attachmentsFolderPath": "attachments"
+  },
+  "sync": {
+    "interval": 300,
+    "enabled": true
+  }
+}

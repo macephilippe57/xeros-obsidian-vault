@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-04-19T06:20:18.062844",
+  "agents": {
+    "market_analyzer": {
+      "agent": "market_analyzer",
+      "timestamp": "2026-04-19T06:20:18.062853",
+      "indicators": [
+        "fear_greed_analysis",
+        "vix_analysis",
+        "dxy_correlation"
+      ],
+      "action": null,
+      "symbol": null
+    },
+    "risk_manager": {
+      "overall_risk": "medium",
+      "position_limits_ok": true,
+      "stop_loss_check": true,
+      "take_profit_check": true,
+      "compliance": true
+    }
+  },
+  "trading_signals": [],
+  "risk_assessment": {
+    "overall_risk": "medium",
+    "position_limits_ok": true,
+    "stop_loss_check": true,
+    "take_profit_check": true,
+    "compliance": true
+  }
+}
